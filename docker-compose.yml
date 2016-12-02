@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  tf:
+    build: .
+    image: eterna2/tensorflow
+    container_name: tf
+    ports:
+      - 8888:8888
+    volumes:
+      - ./tensorflow_nb:/notebooks/shared
+    
